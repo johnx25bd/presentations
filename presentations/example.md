@@ -1,0 +1,422 @@
+---
+title: Welcome to Beautiful Presentations
+theme: white
+highlightTheme: github
+revealOptions:
+  transition: 'slide'
+  controls: true
+  progress: true
+  center: false
+---
+
+<!-- Title Slide -->
+<!-- .slide: class="title-slide" -->
+
+# Beautiful Presentations
+
+<div class="subtitle">From Markdown to Stunning Slides</div>
+
+<div class="author">Reveal.js + Custom Styling | 2025</div>
+
+---
+
+<!-- Section Divider -->
+<!-- .slide: class="section-slide" -->
+
+## Why This Workflow?
+
+---
+
+## The Problem
+
+Creating presentations is often:
+
+- **Time-consuming**: Fiddling with alignment and fonts
+- **Inconsistent**: Different styles across slides
+- **Hard to maintain**: Binary formats, version control issues
+- **Not developer-friendly**: Click-heavy interfaces
+
+<div class="highlight">
+We need a better way to create beautiful slides quickly
+</div>
+
+---
+
+## The Solution
+
+<div class="two-columns">
+
+<div>
+
+### Write in Markdown
+
+```markdown
+## Slide Title
+
+- Point one
+- Point two
+- Point three
+```
+
+Simple, version-controlled, and fast
+
+</div>
+
+<div>
+
+### Get Beautiful Results
+
+- Professional styling automatically
+- Consistent design system
+- Custom themes included
+- Export to PDF or HTML
+
+</div>
+
+</div>
+
+---
+
+<!-- Section Divider -->
+<!-- .slide: class="section-slide" -->
+
+## Key Features
+
+---
+
+## 🎨 Beautiful Default Styling
+
+This theme includes:
+
+1. **Modern color palette** with gradients
+2. **Professional typography** optimized for presentations
+3. **Pre-built components** for common layouts
+4. **Responsive design** that scales perfectly
+
+No design skills required—just write your content.
+
+---
+
+## 🔧 Easy Customization
+
+<div class="card">
+
+### Customize Anything
+
+- Colors and fonts in `custom-theme.css`
+- Add your own CSS classes
+- Override individual slide styles
+- Use HTML when you need more control
+
+</div>
+
+Start with good defaults, customize when needed.
+
+---
+
+## 💻 Developer-Friendly Workflow
+
+```bash
+# Create a new presentation
+npm run new
+
+# Live reload during development
+npm run dev
+
+# Export when ready
+npm run build
+```
+
+Write markdown, see results instantly, iterate fast.
+
+---
+
+## 📦 Version Control Native
+
+> "Code is written once but read many times."
+>
+> This applies to presentations too.
+
+Benefits:
+
+- **Track changes**: See what changed between versions
+- **Collaborate**: Multiple people can edit
+- **Branch**: Try different versions safely
+- **Reuse**: Copy slides between presentations
+
+---
+
+<!-- Section Divider -->
+<!-- .slide: class="section-slide" -->
+
+## Layout Examples
+
+---
+
+## Standard Content
+
+Regular paragraphs work great for explanatory content:
+
+This is a paragraph of text that demonstrates how normal prose appears in these slides. The typography is optimized for readability even from a distance.
+
+You can combine paragraphs with lists and other elements seamlessly.
+
+---
+
+## Highlight Boxes
+
+<div class="highlight">
+⚡ Use highlight boxes to draw attention to critical information
+</div>
+
+<div class="highlight">
+💡 Pro tips and important callouts stand out visually
+</div>
+
+<div class="highlight">
+✅ They're perfect for key takeaways and action items
+</div>
+
+---
+
+## Code Examples
+
+JavaScript:
+
+```javascript
+const createSlide = (content) => {
+  return {
+    title: content.title,
+    body: content.body,
+    style: 'beautiful'
+  };
+};
+```
+
+Python:
+
+```python
+def create_presentation(title, slides):
+    """Generate a beautiful presentation"""
+    return Presentation(title=title, slides=slides)
+```
+
+---
+
+## Two-Column Comparisons
+
+<div class="two-columns">
+
+<div>
+
+### Before
+
+- Manual formatting
+- Inconsistent styles
+- Hard to update
+- Poor version control
+- Slow iteration
+
+</div>
+
+<div>
+
+### After
+
+- Automatic styling
+- Design system
+- Easy updates
+- Git-friendly
+- Fast workflow
+
+</div>
+
+</div>
+
+Perfect for before/after, pros/cons, or side-by-side comparisons.
+
+---
+
+## Mixed Content
+
+<div class="two-columns">
+
+<div>
+
+### Text
+
+You can combine:
+- Text content
+- Lists
+- **Bold** and *italic*
+- `inline code`
+
+</div>
+
+<div>
+
+### Code
+
+```javascript
+function present() {
+  return 'awesome';
+}
+```
+
+Or images, charts, anything!
+
+</div>
+
+</div>
+
+---
+
+<!-- Section Divider -->
+<!-- .slide: class="section-slide" -->
+
+## Advanced Features
+
+---
+
+## Fragments
+
+Build your points incrementally:
+
+- First point appears <!-- .element: class="fragment" -->
+- Then the second <!-- .element: class="fragment" -->
+- Finally the third <!-- .element: class="fragment" -->
+
+<div class="highlight fragment">
+And reveal the key takeaway last
+</div>
+
+Note: Press space or arrow keys to advance through fragments
+
+---
+
+## Speaker Notes
+
+This slide has speaker notes (press 'S' to see them).
+
+They're perfect for:
+- Reminders of what to say
+- Timing cues
+- References and links
+- Backup information
+
+Note:
+These notes are only visible in speaker view!
+They won't show on the main presentation screen.
+Remember to mention the keyboard shortcuts.
+
+---
+
+## Nested Slides
+
+You can organize related content vertically.
+
+Press **down arrow** to see nested slides, **right arrow** to skip to next section.
+
+----
+
+### Nested Slide 1
+
+This slide is nested under the previous one.
+
+Navigate with up/down arrows.
+
+----
+
+### Nested Slide 2
+
+Great for:
+- Deep dives into topics
+- Optional details
+- Related examples
+
+Press **right arrow** to continue the main flow.
+
+---
+
+<!-- Section Divider -->
+<!-- .slide: class="section-slide" -->
+
+## Getting Started
+
+---
+
+## Quick Start
+
+<div class="card">
+
+### Three Steps to Your First Presentation
+
+1. **Create**: Run `npm run new` to start from template
+2. **Edit**: Write your content in markdown
+3. **Present**: Run `npm run dev` and open browser
+
+</div>
+
+<div class="text-center mt-2">
+See `README.md` for full documentation
+</div>
+
+---
+
+## Workflow Tips
+
+**During Development:**
+- Keep `npm run dev` running
+- Edit markdown files
+- Browser auto-refreshes on save
+
+**When Presenting:**
+- Press `F` for fullscreen
+- Press `S` for speaker view
+- Press `O` for overview mode
+
+**For Distribution:**
+- `npm run build` creates static HTML
+- Print to PDF from browser
+- Share the `dist/` folder
+
+---
+
+## Resources
+
+<div class="two-columns">
+
+<div>
+
+### Documentation
+
+- `README.md` - Full guide
+- `slides/templates/` - More examples
+- `custom-theme.css` - Style reference
+
+</div>
+
+<div>
+
+### External
+
+- [Reveal.js Docs](https://revealjs.com)
+- [Markdown Guide](https://www.markdownguide.org)
+- [reveal-md](https://github.com/webpro/reveal-md)
+
+</div>
+
+</div>
+
+---
+
+<!-- Final Slide -->
+<!-- .slide: class="title-slide" -->
+
+# Start Creating
+
+<div class="subtitle">Beautiful presentations in minutes, not hours</div>
+
+<div class="text-small mt-2">
+Run <code>npm run new</code> to create your first presentation
+</div>
