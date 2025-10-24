@@ -2,8 +2,8 @@
 node_modules/
 package-lock.json
 
-# Build output
-dist/
+# Build output (allow dist for GitHub Pages)
+# dist/
 
 # IDE
 .vscode/
