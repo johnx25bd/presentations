@@ -1,0 +1,19 @@
+{
+  "name": "reveal-presentations",
+  "version": "1.0.0",
+  "description": "Beautiful presentations with Reveal.js",
+  "scripts": {
+    "dev": "reveal-md presentations --watch --css slides/assets/css/custom-theme.css",
+    "build": "reveal-md presentations --static dist --css slides/assets/css/custom-theme.css",
+    "present": "reveal-md presentations --css slides/assets/css/custom-theme.css",
+    "new": "node scripts/new-presentation.js"
+  },
+  "keywords": [
+    "reveal.js",
+    "presentations",
+    "markdown"
+  ],
+  "devDependencies": {
+    "reveal-md": "^6.1.0"
+  }
+}
