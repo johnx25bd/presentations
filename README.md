@@ -135,16 +135,38 @@ More content
 - Export to PDF via print dialog
 - Export to static HTML for hosting
 
-## Custom Theme Features
+## Available Themes
 
-The included `custom-theme.css` provides:
+### Default Theme (`custom-theme.css`)
 
-- **Modern color palette** with gradients
-- **Beautiful typography** optimized for readability
-- **Pre-styled components**: title slides, section dividers, highlight boxes, cards
-- **Two-column layouts** for comparisons
-- **Code syntax highlighting** with custom styling
-- **Responsive design** that looks great on any screen
+Modern, colorful presentation theme:
+- Gradient color palette (blues/purples)
+- Bold typography with visual hierarchy
+- Pre-styled components for common layouts
+- Great for general-purpose presentations
+
+**Use it:** Default in all templates
+
+### John X Theme (`johnx-theme.css`)
+
+Minimalist, scholarly theme designed for research and technical content:
+- Neutral color palette (charcoal, slate, muted teal)
+- Typography-driven design with generous whitespace
+- Grid-based layouts with restrained styling
+- Inquiry-focused components
+- Perfect for: Research talks, technical briefings, academic presentations
+
+**Use it:**
+```markdown
+---
+title: Your Talk
+css: slides/assets/css/johnx-theme.css
+---
+```
+
+**See example:** `presentations/location-infrastructure.md`
+
+---
 
 ## Customizing Themes
 
@@ -280,6 +302,48 @@ fetch('slides/assets/data/my-data.json')
   .then(r => r.json())
   .then(data => createVisualization(data));
 ```
+
+## Theme-Specific Components
+
+### John X Theme Components
+
+The John X theme includes specialized components for research presentations:
+
+**Inquiry blocks** - For framing questions:
+```markdown
+<div class="inquiry">
+How can location be verified without trusting a single authority?
+</div>
+```
+
+**Diagram containers** - For line-based visuals:
+```markdown
+<div class="diagram">
+  <!-- Your SVG or visualization here -->
+</div>
+```
+
+**Three-column layout** - For structured information:
+```markdown
+<div class="three-columns">
+<div>Column 1</div>
+<div>Column 2</div>
+<div>Column 3</div>
+</div>
+```
+
+**Serif text** - For quotes and emphasis:
+```markdown
+<span class="serif">Typography as expression</span>
+```
+
+**Utility classes:**
+- `.text-small` - Smaller, muted text
+- `.uppercase` - Uppercase with letter-spacing
+- `.mt-1` through `.mt-4` - Margin top spacing
+- `.mb-1` through `.mb-4` - Margin bottom spacing
+
+---
 
 ## Tips
 

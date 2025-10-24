@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Beautiful presentations with Reveal.js",
   "scripts": {
-    "dev": "reveal-md presentations --watch --css slides/assets/css/custom-theme.css",
-    "build": "reveal-md presentations --static dist --css slides/assets/css/custom-theme.css",
-    "present": "reveal-md presentations --css slides/assets/css/custom-theme.css",
+    "dev": "reveal-md presentations --watch",
+    "build": "reveal-md presentations --static dist",
+    "present": "reveal-md presentations",
     "new": "node scripts/new-presentation.js"
   },
   "keywords": [

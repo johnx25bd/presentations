@@ -1,5 +1,6 @@
 ---
 title: Welcome to Beautiful Presentations
+css: slides/assets/css/custom-theme.css
 theme: white
 highlightTheme: github
 revealOptions:
